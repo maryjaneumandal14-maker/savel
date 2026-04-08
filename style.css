@@ -1,0 +1,217 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7efe6;
+    color: #3a2a1f;
+}
+
+/* HEADER */
+.hero {
+    background-image: url("images/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-style: italic;
+}
+
+/* WELCOME BOX */
+.welcome {
+    background: #fff;
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.welcome h2 {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+    /* PARA SA <a> TAG */
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+}
+
+/* SUB NAV */
+.sub-nav {
+    background: #4b2600;
+    padding: 12px;
+    text-align: center;
+}
+
+.sub-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sub-nav a:hover {
+    text-decoration: underline;
+}
+
+.back {
+    color: #ffd700;
+}
+
+/* CONTENT BOX */
+.content {
+    background: #fffaf2;
+    width: 70%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.content h2 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 30px;
+}
+
+/* POEM SELECTION BUTTONS */
+.poem-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.poem-buttons button {
+    background: white;
+    border: 2px solid #8b0000;
+    color: #8b0000;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.poem-buttons button:hover {
+    background: #8b0000;
+    color: white;
+}
+
+.poem-buttons button.active {
+    background: #8b0000;
+    color: white;
+}
+
+/* POEM */
+.poem {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.poem h3 {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+/* STORY (MAIKLING KWENTO) */
+.story {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.story h3 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+/* OBRA */
+.obra {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.obra h3 {
+    color: #8b0000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.obra-desc,
+.obra-meaning {
+    text-align: justify;
+}
+
+/* FOOTER */
+footer {
+    background: #3a1f0f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;   /* ⭐ ITO ANG KULANG */
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+

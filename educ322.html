@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDUC 322 | Portfolio</title>
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f2f2;
+    color: #3a1f0f;
+}
+
+/* HERO HEADER */
+.hero {
+    background-image: url("images/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* NAVIGATION */
+.sub-nav {
+    background: #3a1f0f;
+    padding: 12px;
+    text-align: center;
+}
+
+.sub-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT – EDUC 322 */
+.content {
+    background: #fffaf2;
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 55px 65px;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.content h2 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+
+/* TEXT / POEM */
+.content p {
+    line-height: 1.9;
+    text-align: center; /* poem look */
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #3a1f0f;
+    color: white;
+    margin-top: 60px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+</style>
+
+<script>
+function showSection(sectionId, button) {
+    const sections = document.querySelectorAll('.section-content');
+    sections.forEach(sec => sec.style.display = 'none');
+
+    const buttons = document.querySelectorAll('.section-buttons button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(sectionId).style.display = 'block';
+    button.classList.add('active');
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>Banga ng Pagkatuto at Kaalaman</h1>
+    <p>educ 322</p>
+</header>
+
+<!-- NAV -->
+<nav class="sub-nav">
+    <a href="index.html">← Bumalik</a>
+  
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>Wisdom Beyond Machine</h2>
+                
+                <p>Along the path of knowledge, I walk each day,
+Carrying dreams of teaching along the way;
+AI is a tool the curious mind can use,
+To deepen lessons and help learners choose.</p>
+<p>
+    Inside the classroom, lessons are shaped,
+Technology guides us, keeps learning safe;
+It does not steal the teacher’s role or pride,
+But stands as a partner by the teacher’s side.
+</p>
+<p>
+    In research and study, data grows strong,
+Learning becomes honest, clear, and well-drawn;
+Yet behind the speed machines can provide,
+Critical thinking must still be our guide.
+</p>
+<p>
+    As a future teacher, I carry a task,
+To use AI wisely and questions to ask;
+Quick answers alone are never enough,
+If lessons lack meaning and thinking is rough.
+</p>
+    <p>
+        Values and ethics, awareness and care,
+No digital program can fully compare;
+In the bond of teacher and learner so true,
+Lessons grow human, moral, and true.
+    </p>
+
+    <p>
+        So as we move on in modern education’s way,
+AI will be used with respect every day;
+So the youth we teach, guide, and inspire,
+May be critical, responsible, and human always.
+    </p>
+
+    <p>
+        Kindly correct the grammar, provide a pleasant rhyme, use simple and shorter words for a poetic form, add emotion, and clarify the message without changing its original meaning.”
+    </p>
+
+    <p>
+        “Wisdom Beyond Machines”
+    </p>
+
+    <p>
+        On the path of learning, I take my way,
+With dreams to guide students every day;
+AI helps us think and find what’s true,
+It makes learning faster, helping us through.
+    </p>
+
+    <p>
+        In the classroom, lessons grow and shine,
+Technology helps, but the teacher’s fine;
+It does not steal the teacher’s pride,
+It stands beside them, a helpful guide.
+    </p>
+
+    <p>
+        In research, data grows and flows,
+Studying becomes easy as it goes;
+But behind the speed that machines provide,
+Critical thinking must always guide.
+    </p>
+
+    <p>
+        Teachers of the future have a role to play,
+AI must be used in a careful way;
+Quick answers alone are not enough,
+Understanding the lesson is the right stuff.
+    </p>
+
+    <p>
+        Values, ethics, and knowing what’s right,
+No program can teach with heart so bright;
+In the bond of teacher and student strong,
+Learning shapes humans to last lifelong.
+    </p>
+
+    <p>
+        So in modern learning, we must be wise,
+Use AI with care, and open our eyes;
+To help the youth think, care, and grow,
+Critical, responsible, with hearts that glow.
+    </p>
+
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>Building and enhancing new literacies across the curriculum </h2>
+                
+                <p>Reflection:
+The lesson that i learned about 21st century skills helped me understand the importance of adapting to a modern world. I learned that learning skills, especially the four C’s, are essential for thinking and working effectively. It also showed me how literacy skills help us identify reliable information and avoid misinformation online. These skills are important not only in school but also in real-life situations. Overall, this topic inspired me to improve my critical thinking and be more responsible in using information as always and apply it to my daily life.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>Introduction to Teaching Multigrade Classes in the Philippines </h2>
+                
+                <p>Reflection:
+This lesson helped me understand the importance of multigrade teaching in the Philippines. I learned that it provides education to students in remote and underserved areas. It also showed me the different skills teachers need, such as flexibility, creativity, and strong classroom management. I realized that teaching different grade levels at the same time requires patience and dedication. Overall, I appreciate how multigrade teaching supports equal learning opportunities for all students.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>Pen of the Digital Age</h2>
+                
+                <p>Reflection:
+realized that digital tools make communication faster and easier, especially in education, but they also require us to be responsible in what we share. This made me understand that using technology wisely is important in becoming a better and more informed learner.
+</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>EDCOM II report in basic education from p22</h2>
+                
+                <p>Reflection:
+It made me realize that education in our country still needs strong support and effective solutions to help students succeed. This topic reminds me that everyone has a role in improving the future of education.
+</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>Artificial Intelligence</h2>
+                
+                <p>Reflection:
+I realized that it can make tasks easier and support learning, but it also requires responsible and ethical use. This topic helped me understand that AI should be used as a tool to improve knowledge, not replace human thinking.And also Ai should be guide but not the replacement of teacher.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="content">
+
+    <!-- SECTIONS -->
+    <div id="lesson1" class="section-content" style="display:block;">
+<div class="poem-container">
+                <h2>The Hidden Crisis in Research Writing</h2>
+                
+                <p>What does “a hidden crisis in research writing” mean to you, and how might inadequate referencing contribute to that crisis?</p>
+                <p>Answer:A hidden crisis in research writing” means that many students and researchers struggle with producing accurate and credible research, but the problem is often unnoticed.It referencing contributes to this crisis because it makes it hard to verify information, lowers the credibility of the work.</p>
+                <p>Why might fake or AI-generated references be harmful to the academic community and to your own research career?</p>
+                <p>Answer:Fake or AI-generated references are harmful because they mislead readers, undermine trust in academic work, and can seriously damage a researcher’s reputation.</p>
+                <p>Reflection:
+This made me realize that proper referencing is essential not only for honesty but also for building trust in the academic community. Using accurate sources helps me develop credibility and become a responsible researcher.And always remember that Ai is not always right.</p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+© 2026 | Banga ng Pagkatuto at Kaalaman - Digital Portfolio
+</footer>
+
+</body>
+</html>
